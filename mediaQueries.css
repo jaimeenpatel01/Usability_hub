@@ -1,0 +1,141 @@
+@media screen and (max-width:991px){
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .nav-links.active{
+        left: 0;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+    }
+
+    .main-nav{
+        overflow: initial;
+    }
+
+    .examples-area{
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .examples-card{
+        width: calc(50% - 10px);
+        height: 180px;
+    }
+
+    .cta-section{
+        padding: 80px;
+    }
+
+    .link-column{
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .header-section{
+        flex-direction: column-reverse;
+    }
+    
+    .header-right img{
+        width: 85%;
+    }
+
+    .header-right{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header-left{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .primary-button{
+        width: 100%;
+    }
+
+    .features-card{
+        min-width: calc(50% - 10px);
+    }
+
+    .big-feature-container,.big-feature-container2{
+        flex-direction: column;
+    }
+
+    .feature-img img{
+        width: 85%;
+    }
+
+    .feature-img{
+        justify-content: center;
+    }
+
+    .footer-container{
+       flex-direction: column;
+        gap: 40px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .link-column{
+        align-items: stretch;
+    }
+
+    .sub-footer{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:479px) {
+    :root{
+        --padding—inline—section: 10px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .features-card{
+        min-width: 100%;
+    }
+
+    .features-area{
+        gap: 40px;
+    }
+
+    .examples-card{
+        width: 100%;
+    }
+
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
 </head>
 <body>
     <!-- Top-Banner -->
@@ -19,7 +20,7 @@
             <a class="company-logo">
                 <img src="./assets/asset 1.png">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customers</a></li>
@@ -29,6 +30,7 @@
                     <li><a href="#" class="hover-link primary-button">Sign up</a></li>
                 </ul>
             </div>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
         </div>
     </nav>
     
@@ -112,7 +114,7 @@
     
     <section class="big-feature-section">
         <div class="container flex big-feature-container">
-            <div class="feature-img">
+            <div class="feature-img flex">
                 <img src="./assets/asset 18.png" alt="">
             </div>
             <div class="feature-description flex">
@@ -125,7 +127,7 @@
     
     <section class="big-feature-section">
         <div class="container flex big-feature-container big-feature-container2">
-            <div class="feature-img">
+            <div class="feature-img flex">
                 <img src="./assets/asset 21.png" alt="">
             </div>
             <div class="feature-description flex">
@@ -138,7 +140,7 @@
 
     <section class="big-feature-section">
         <div class="container flex big-feature-container">
-            <div class="feature-img">
+            <div class="feature-img flex">
                 <img src="./assets/asset 24.png" alt="">
             </div>
             <div class="feature-description flex">
@@ -176,8 +178,8 @@
     </section>
 
 
-    <section class="cta-section flex">
-        <div class="cta-section-content flex">
+    <section class="cta-section">
+        <div class="container cta-section-content flex">
             <h2>Start testing today</h2>
             <p>Take the guesswork out of design decisions</p>
             <a href="#" class="primary-button">Get Started</a>
@@ -229,7 +231,15 @@
         <a href="#" class="hover-link"><i class="fa-brands fa-twitter"></i></a>
     </div>
 
-    <!-- <div class="spacer" style="height: 100px;"></div> -->
     <script src="https://kit.fontawesome.com/d47b6c5725.js" crossorigin="anonymous"></script>
+
+    <script>
+        const toggleButton=document.getElementById('nav-toggle');
+        const navLinks=document.getElementById('nav-links'); 
+
+        toggleButton.addEventListener('click',()=>{
+            navLinks.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
